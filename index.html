@@ -7,64 +7,58 @@
 <meta name="description" content="オランダ在住の日本人ビジネスパーソン・駐在員向けに、税制・ビザ・生活情報を毎日日本語で要約してお届けします。">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Yu Gothic UI', 'Segoe UI', sans-serif; background: #F2F4F7; color: #202F55; line-height: 1.75; }
-  .hero { background: #202F55; color: #fff; padding: 48px 24px; text-align: center; }
-  .hero h1 { font-size: 2em; font-weight: 700; letter-spacing: 0.03em; margin-bottom: 8px; }
-  .hero p { font-size: 1em; color: #869DBC; max-width: 520px; margin: 0 auto; }
-  .container { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
-  .latest { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(45,47,85,0.08); margin-bottom: 24px; }
-  .latest h2 { font-size: 1.1em; color: #202F55; margin-bottom: 16px; border-bottom: 2px solid #869DBC; padding-bottom: 6px; }
-  .latest .lead { font-size: 0.95em; color: #666; margin-bottom: 16px; }
-  .latest a.btn { display: inline-block; background: #202F55; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-size: 0.9em; font-weight: 600; }
-  .latest a.btn:hover { background: #869DBC; }
-  .archive { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(45,47,85,0.08); margin-bottom: 24px; }
-  .archive h2 { font-size: 1.1em; color: #202F55; margin-bottom: 16px; border-bottom: 2px solid #869DBC; padding-bottom: 6px; }
-  .archive ul { list-style: none; }
-  .archive li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
-  .archive li:last-child { border-bottom: none; }
-  .archive a { color: #202F55; text-decoration: none; font-weight: 600; }
-  .archive a:hover { color: #869DBC; }
-  .archive .date { color: #888; font-size: 0.85em; margin-right: 8px; }
-  .about-link { text-align: center; margin: 24px 0; }
-  .about-link a { color: #869DBC; text-decoration: none; font-size: 0.85em; }
-  .about-link a:hover { text-decoration: underline; }
-  .footer { text-align: center; color: #aaa; font-size: 0.75em; padding: 24px; }
+  body { font-family: 'Yu Gothic UI', 'Segoe UI', sans-serif; background: #fff; color: #1D1D1D; line-height: 1.7; font-size: 15px; }
+  a { color: #202F55; }
+  .site-header { border-bottom: 1px solid #e0e0e0; padding: 14px 0; }
+  .site-header .inner { max-width: 640px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: baseline; }
+  .site-header .logo { font-size: 1.1em; font-weight: 700; color: #202F55; text-decoration: none; letter-spacing: 0.02em; }
+  .site-header nav a { font-size: 0.8em; color: #869DBC; text-decoration: none; margin-left: 16px; }
+  .site-header nav a:hover { color: #202F55; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
+  .intro { margin-bottom: 32px; }
+  .intro p { font-size: 0.85em; color: #666; }
+  .section-label { font-size: 0.7em; font-weight: 600; color: #869DBC; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+  .latest-link { display: block; padding: 16px 0; border-top: 1px solid #e0e0e0; text-decoration: none; color: #1D1D1D; }
+  .latest-link:hover { background: #FAFBFC; }
+  .latest-link .title { font-weight: 600; font-size: 0.95em; }
+  .latest-link .meta { font-size: 0.75em; color: #999; margin-top: 2px; }
+  .placeholder { padding: 16px 0; border-top: 1px solid #e0e0e0; font-size: 0.85em; color: #bbb; }
+  .divider { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+  .footer { max-width: 640px; margin: 0 auto; padding: 0 20px 40px; font-size: 0.7em; color: #bbb; }
+  .footer a { color: #869DBC; text-decoration: none; }
   @media (max-width: 600px) {
-    .hero { padding: 32px 16px; }
-    .hero h1 { font-size: 1.5em; }
-    .container { padding: 16px 8px; }
+    main { padding: 24px 16px 40px; }
   }
 </style>
 </head>
 <body>
-<div class="hero">
-  <h1>NL Briefing</h1>
-  <p>オランダ在住日本人のための<br>毎日のニュースダイジェスト</p>
-</div>
-<div class="container">
-  <div class="latest">
-    <h2>最新号</h2>
-    <p class="lead">税制・ビザ・住宅・政治経済・生活情報を、毎朝日本語で要約してお届けします。</p>
-    <p style="color:#aaa; font-size:0.9em;">準備中 — まもなく配信開始します。</p>
-    <!-- 配信開始後は以下のように差し替え:
-    <a class="btn" href="/2026-03-26.html">2026年3月26日号を読む</a>
-    -->
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="logo">NL Briefing</a>
+    <nav><a href="/about.html">About</a></nav>
   </div>
-  <div class="archive">
-    <h2>過去の配信</h2>
-    <ul>
-      <li style="color:#aaa; font-size:0.9em;">まだ配信がありません。</li>
-      <!-- 配信開始後は以下のように追加:
-      <li><span class="date">2026-03-26</span><a href="/2026-03-26.html">2026年3月26日号</a></li>
-      -->
-    </ul>
+</header>
+<main>
+  <div class="intro">
+    <p>オランダ在住日本人のためのニュースダイジェスト。税制・ビザ・住宅・政治経済を毎朝日本語で。</p>
   </div>
-  <div class="about-link">
-    <a href="/about.html">このサイトについて</a>
-  </div>
-</div>
+
+  <div class="section-label">Latest</div>
+  <div class="placeholder">まもなく配信開始します。</div>
+
+  <hr class="divider">
+
+  <div class="section-label">Archive</div>
+  <div class="placeholder">まだ配信がありません。</div>
+  <!-- 配信開始後:
+  <a class="latest-link" href="/2026-03-26.html">
+    <div class="title">2026年3月26日号</div>
+    <div class="meta">税金・届出 / オランダ政治・経済 / 生活情報 — 12 articles</div>
+  </a>
+  -->
+</main>
 <div class="footer">
-  NL Briefing
+  NL Briefing &mdash; AI生成ニュースダイジェスト / <a href="/about.html">免責事項</a>
 </div>
 </body>
 </html>
